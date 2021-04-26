@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:fancy_stream/fancy_stream.dart';
 import 'package:fancy_stream/src/injector.dart';
-import 'package:get_it/get_it.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:rxdart/rxdart.dart';
 

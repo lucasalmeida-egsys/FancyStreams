@@ -17,7 +17,7 @@ class GetItInjector implements Injector {
   T get<T extends Object>(
       {String? key, Map<String, dynamic>? additionalParameters}) {
     try {
-      return _instance<T>(instanceName: key);
+      return _instance.get<T>(instanceName: key);
     } on AssertionError {
       throw InjectorException();
     }
