@@ -154,7 +154,7 @@ class FancyImp implements Fancy {
   Map<dynamic, dynamic> get map {
     return _loadedSubjects.map<dynamic, dynamic>(
         (String key, BehaviorSubject s) =>
-            MapEntry<dynamic, dynamic>(_keys[key], s.value));
+            MapEntry<dynamic, dynamic>(_keys[key], s.valueOrNull));
   }
 
   operator [](Object key) => map[key];
